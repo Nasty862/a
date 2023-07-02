@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="fonts/roboto/stylesheet.css" rel="stylesheet"type="text/css" /> 
+    <link rel="stylesheet" href="stil.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
+    <title>Document</title>
+    <script async src="car.js"></script>
+    <script async src="car.js"></script>
+    <script async src="boton.js"></script>
+    <script async src="boton.js"></script>
+    <script async src="cnop.js"></script>
+    <script async src="cnop.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.22/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.22/dist/js/uikit-icons.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body class="pag">
+    <div class="header_pag">
+        <header class="header">
+            <nav class="menu_header">
+               <ul class="menu">
+                <li class="menu_item">
+                    <a class="menu_item_link" href="#1">главная</a>
+                </li>
+                <li class="menu_item">
+                    <a class="menu_item_link" href="#3">портфолио</a>
+                </li>
+                <li class="menu_item">
+                    <a class="menu_item_link" href="#2">услуги и цены</a>
+                </li>
+                <li class="menu_item">
+                    <a class="menu_item_link" href="#4">контакты</a>
+                </li>
+            </ul> 
+        
+        </nav>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn im"></button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#1">главная</a>
+                <hr>
+                <a href="#3">портфолио</a>
+                <hr>
+                <a href="#2">услуги и цены</a>
+                <hr>
+                <a href="#4">контакты</a>
+                <hr>
+              </div>
+            </div>
+          
+      
+        
+        <style>
+            .dropdown{
+                margin-left: 0px;
+            }
+            .im{
+                background-image: url(img/pngegg.png ) ;
+                width: 50px;
+                height: 50px;
+                background-color: #5D5447;
+                
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                z-index: 1;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                margin: auto;
+            }
+            .dropbtn {
+               
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                margin: auto;
+                
+                
+                
+            }
+            
+            .dropbtn:hover {
+                
+                opacity: 0.4;
+                filter: alpha(opacity=40); 
+                border: none;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                margin: auto;
+            }
+            
+            .dropdown {
+                position: relative;
+                display: inline-block;
+                border: none;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                margin: auto;
+            }
+            
+            .dropdown-content {
+                display: none;
+                background-color: #5D5447;
+                
+                overflow: auto;
+                z-index: 1;
+                width: 100%;
+                width: 250px;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                margin: auto;
+                position: static;
+            border: none;
+            }
+            #myDropdown{
+                border: none;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                margin: auto;
+            }
+            
+            .dropdown-content a {
+                color: #F5F1EC;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                font-family: 'Open Sans Condensed';
+                font-size: 22px;
+                letter-spacing: 0.1em;
+            }
+            .show{
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                margin: auto;
+
+            }
+            
+            .dropdown a:hover {background-color: #ddd;}
+            @media (min-width: 600px) {
+   .dropdown {
+      display: none;
+}}
+            .show {display: block;}
+            </style>
+            
+           
+            
+            <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+            
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
+    </div>
+</header>
+
+    <div class="intro"id="1">
+        <img class="logo" src="img/2023-06-06_20-46-41-transformed.png" width="866" height="823"  >
+        <img class="logo_v" src="img/IMG_7546.png" width="1054" height="1167">
+    </div>
+    <div class="Portfolio" id="3">
+        <h2 class="Portfolio_name">ПОРТФОЛИО</h2>
+
+    </div>
+    <div class="none uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="centr: true">
+        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+            <li>
+                <img class="ani" src="портфолио/1.png" width="500" height="600"  alt="Слайдер">
+               
+            </li>
+            <li>
+                <img class="ani" src="портфолио/2.png" width="500" height="600"  alt="Слайдер">
+              
+            </li>
+            <li>
+                <img class="ani" src="2.jpg"  alt="Слайдер" width="500 " height="600">
+                
+            </li>
+            <li>
+                <img class="ani"  src="портфолио/4.jpg"  alt="Слайдер" width="500" height="600">
+                
+            </li>
+            <li>
+                <img class="ani" src="портфолио/5.png"  alt="Слайдер" width="500" height="600">
+               
+            </li>
+            <li>
+                <img class="ani" src="портфолио/6.png"  alt="Слайдер" width="500" height="600">
+              
+            </li>
+            
+            <li>
+                <img class="ani" src="портфолио/8.png"  alt="Слайдер" width="500" height="600">
+              
+            </li>
+            <li>
+                <img class="ani" src="портфолио/9.png"  alt="Слайдер" width="500" height="600">
+              
+            </li>
+            <li>
+                <img class="ani" src="портфолио/10.png"  alt="Слайдер" width="500" height="600">
+              
+            </li>
+            <li>
+                <img class="ani" src="портфолио/11.png"  alt="Слайдер" width="500" height="600">
+              
+            </li>
+            <li>
+                <img class="ani" src="портфолио/12.png"  alt="Слайдер" width="500" height="600">
+              
+            </li>
+            <li>
+                <img class="ani" src="портфолио/13.png"  alt="Слайдер" width="500" height="600">
+              
+            </li>
+            <li>
+                <img class="ani" src="портфолио/ё4.jpg"  alt="Слайдер" width="500" height="600">
+              
+            </li>
+        </ul>
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    </div>
+    <div div class=" none2 uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
+        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                <img class="ani" src="портфолио/1.png" width="700" height="600" alt="Слайдер" loading="lazy">
+                </div>
+            </li>
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                <img class="ani" src="портфолио/2.png" width="700" height="600" alt="Слайдер" loading="lazy">
+            </div>
+            </li>
+        
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img class="ani" src="2.jpg"  width="700" height="600" alt="Слайдер" loading="lazy">
+            </div>  
+            </li>
+       
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img class="ani"  src="портфолио/4.jpg" width="700" height="600" alt="Слайдер" loading="lazy">
+            </div>
+            </li>
+        
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img class="ani" src="портфолио/5.png"  width="700" height="600" alt="Слайдер" loading="lazy">
+            </div>
+            </li>
+      
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img class="ani" src="портфолио/6.png"  width="700" height="600" alt="Слайдер" loading="lazy">
+            </div>
+            </li>
+        
+            
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                <img class="ani" src="портфолио/8.png"  width="700" height="600" alt="Слайдер" loading="lazy">
+            </div>
+            </li>
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                <img class="ani" src="портфолио/9.png"  width="700" height="600" alt="Слайдер" loading="lazy">
+            </div>
+            </li>
+   
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                <img class="ani" src="портфолио/10.png"  width="700" height="600" alt="Слайдер" loading="lazy">
+            </div> 
+            </li>
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                <img class="ani" src="портфолио/11.png"  width="700" height="600" alt="Слайдер" loading="lazy">
+            </div>
+            </li>
+    
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                <img class="ani" src="портфолио/12.png"  width="700" height="600" alt="Слайдер" loading="lazy">
+            </div>
+            </li>
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                <img class="ani" src="портфолио/13.png"  width="700" height="600" alt="Слайдер" loading="lazy">
+            </div>
+            </li>
+        
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img class="ani" src="портфолио/ё4.jpg"  width="700" height="600" alt="Слайдер" loading="lazy">
+            </div>
+            </li>
+       
+        </ul>
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    </div> <div div class=" none3 uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
+        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                <img class="ani" src="портфолио/1.png" width="600" height="300" alt="Слайдер" loading="lazy">
+                </div>
+            </li>
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                <img class="ani" src="портфолио/2.png" width="600" height="300" alt="Слайдер" loading="lazy">
+            </div>
+            </li>
+        
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img class="ani" src="2.jpg"  width="600" height="300" alt="Слайдер" loading="lazy">
+            </div>  
+            </li>
+       
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img class="ani"  src="портфолио/4.jpg" width="600" height="300" alt="Слайдер" loading="lazy">
+            </div>
+            </li>
+        
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img class="ani" src="портфолио/5.png"  width="600" height="300" alt="Слайдер" loading="lazy">
+            </div>
+            </li>
+      
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img class="ani" src="портфолио/6.png"  width="600" height="300" alt="Слайдер" loading="lazy">
+            </div>
+            </li>
+        
+            
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                <img class="ani" src="портфолио/8.png"  width="600" height="300" alt="Слайдер" loading="lazy">
+            </div>
+            </li>
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                <img class="ani" src="портфолио/9.png"  width="600" height="300" alt="Слайдер" loading="lazy">
+            </div>
+            </li>
+   
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                <img class="ani" src="портфолио/10.png"  width="600" height="300" alt="Слайдер" loading="lazy">
+            </div> 
+            </li>
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                <img class="ani" src="портфолио/11.png"  width="600" height="300" alt="Слайдер" loading="lazy">
+            </div>
+            </li>
+    
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                <img class="ani" src="портфолио/12.png"  width="600" height="300" alt="Слайдер" loading="lazy">
+            </div>
+            </li>
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                <img class="ani" src="портфолио/13.png"  width="600" height="300" alt="Слайдер" loading="lazy">
+            </div>
+            </li>
+        
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img class="ani" src="портфолио/ё4.jpg"  width="600" height="300" alt="Слайдер" loading="lazy">
+            </div>
+            </li>
+       
+        </ul>
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    </div>
+    <div class="serv" id="2">
+<h2 class="serv_name">УСЛУГИ</h2>
+<p class="serv_name_text">
+    Стоимость разработки фотореалистичной визуализации
+</p>
+<div class="anima_serv">
+<img class="Animation" src="портфолио/мал.jpg"   width="500" height="316">
+<img class="Animation" src="портфолио/бол.jpg"   width="500" height="316">
+<img class="Animation" src="портфолио/сред.png"   width="500" height="316">
+</div>
+    <div class="ud">
+<img class="Animation" src="портфолио/мал.jpg"   width="500" height="316">
+<div class="titleSpoiler knop">Пакет «Мини» | Скрыть Пакет «Мини»</div>
+<div class="bodySpoiler">
+
+    <div class="pace">
+        <h2 class="pacet_mini">
+            Пакет «Мини»
+        </h2>
+        <p class="pacet_text">
+            Цена - 450р за 1м2 
+         </p>
+        <p class="pacet_text">
+          Оплата 50% перед началом работы, 50% перед сдачей финальных рендеров
+        </p>
+        <ul class="pacet_text_sp">
+            <li class="pacet_text_sp_naim">
+                ● 4 ракурса на помещение
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● моделирование базовой мебели 
+            </li>
+            <li class="pacet_text_sp_naim">
+                ●2 круга бесплатных правок 
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● доступ к большой базе PRO - моделей
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● разрешение картинки 2000х по большей стороне
+            </li>
+        </ul>
+        <p class="pacet_text_b">Помещение до 10м2 - 5000р</p>
+    </div>
+
+<div class="collapseSpoiler sver">Свернуть </div>
+</div>
+<br>
+<img class="Animation" src="портфолио/бол.jpg"   width="500" height="316">
+<div class="titleSpoiler knop"> Пакет «Стандарт»| Скрыть  Пакет «Стандарт»</div>
+<div class="bodySpoiler">
+    <div class="pace">
+        <h2 class="pacet_mini">
+            Пакет «Стандарт»
+        </h2>
+        <p class="pacet_text">
+            Цена - 550р за 1м2 
+         </p>
+        <p class="pacet_text">
+             Оплата 50% перед началом работы, 50% перед сдачей финальных рендеров
+        </p>
+        <ul class="pacet_text_sp">
+            <li class="pacet_text_sp_naim">
+                ● 4-8 ракурсов на помещение
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● помощь в оформлении ТЗ (обсуждаются все нюансы)
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● моделирование базовой мебели 
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● 3 круга бесплатных правок 
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● доступ к большой базе PRO - моделей
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● разрешение картинки 2500х по большей стороне
+            </li>
+        </ul>
+        <p class="pacet_text_b1">Помещение до 10м2 - 6000р</p>
+    </div>
+
+   
+<div class="collapseSpoiler sver">Свернуть </div>
+</div>
+<img class="Animation" src="портфолио/сред.png"   width="500" height="316">
+<br>
+<div class="titleSpoiler knop knp">Пакет «Макси»| Скрыть  Пакет «Макси»</div>
+<div class="bodySpoiler">
+    <div class="pace">
+        <h2 class="pacet_mini">
+            Пакет «Макси»
+        </h2>
+        <p class="pacet_text">
+            Цена - 700р за 1м2
+        </p>
+        <p class="pacet_text">
+             Оплата 50% перед началом работы, 50% перед сдачей финальных рендеров
+        </p>
+        <ul class="pacet_text_sp">
+            <li class="pacet_text_sp_naim">
+                ● 4-8 ракурсов на помещение
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● помощь в оформлении ТЗ (обсуждаются все нюансы)
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● моделирование сложно мебели 
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● 4 круга бесплатных правок 
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● доступ к большой базе PRO - моделей
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● разрешение картинки 2500х по большей стороне
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● 5 платных PRO моделей
+            </li>
+        </ul>
+        <p class="pacet_text_b2">Помещение до 10м2 - 8000р</p>
+    </div>
+    
+<div class="collapseSpoiler sver">Свернуть</div>
+</div>
+    </div>
+<script>
+    $(function() {
+        $(".titleSpoiler").each(function(g, a) {
+            function e(c) {
+                c.preventDefault();
+                c = +d.is(":hidden");
+                d.slideToggle(200);
+                a.text(b[c])
+            }
+            a = $(a);
+            var b = $.trim(a.text()).split("|");
+            b.push(b[0]);
+            var d = a.next(".bodySpoiler"),
+                f = $(".collapseSpoiler", d);
+            a.text(b[0]);
+            a.click(e);
+            f.click(e)
+        })
+    });
+    </script>
+
+   
+ <div class="pac">  
+    <div class="pacet">
+        <h2 class="pacet_mini">
+            Пакет «Мини»
+        </h2>
+        <p class="pacet_text">
+            Цена - 450р за 1м2 
+         </p>
+        <p class="pacet_text">
+          Оплата 50% перед началом работы, 50% перед сдачей финальных рендеров
+        </p>
+        <ul class="pacet_text_sp">
+            <li class="pacet_text_sp_naim">
+                ● 4 ракурса на помещение
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● моделирование базовой мебели 
+            </li>
+            <li class="pacet_text_sp_naim">
+                ●2 круга бесплатных правок 
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● доступ к большой базе PRO - моделей
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● разрешение картинки 2000х по большей стороне
+            </li>
+        </ul>
+        <p class="pacet_text_b">Помещение до 10м2 - 5000р</p>
+    </div>
+    <div class="pacet2">
+        <h2 class="pacet_mini">
+            Пакет «Макси»
+        </h2>
+        <p class="pacet_text">
+            Цена - 700р за 1м2
+        </p>
+        <p class="pacet_text">
+             Оплата 50% перед началом работы, 50% перед сдачей финальных рендеров
+        </p>
+        <ul class="pacet_text_sp">
+            <li class="pacet_text_sp_naim">
+                ● 4-8 ракурсов на помещение
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● помощь в оформлении ТЗ (обсуждаются все нюансы)
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● моделирование сложно мебели 
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● 4 круга бесплатных правок 
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● доступ к большой базе PRO - моделей
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● разрешение картинки 2500х по большей стороне
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● 5 платных PRO моделей
+            </li>
+        </ul>
+        <p class="pacet_text_b2">Помещение до 10м2 - 8000р</p>
+    </div>
+    <div class="pacet1">
+        <h2 class="pacet_mini">
+            Пакет «Стандарт»
+        </h2>
+        <p class="pacet_text">
+            Цена - 550р за 1м2 
+         </p>
+        <p class="pacet_text">
+             Оплата 50% перед началом работы, 50% перед сдачей финальных рендеров
+        </p>
+        <ul class="pacet_text_sp">
+            <li class="pacet_text_sp_naim">
+                ● 4-8 ракурсов на помещение
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● помощь в оформлении ТЗ (обсуждаются все нюансы)
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● моделирование базовой мебели 
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● 3 круга бесплатных правок 
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● доступ к большой базе PRO - моделей
+            </li>
+            <li class="pacet_text_sp_naim">
+                ● разрешение картинки 2500х по большей стороне
+            </li>
+        </ul>
+        <p class="pacet_text_b1">Помещение до 10м2 - 6000р</p>
+    </div>
+   </div>
+   <div class="footer">
+    <h2 class="footer_nam">КОНТАКТЫ</h2>
+    <p class="footer_text">
+        Вы можете связаться с нами любым удобным способом
+    </p>
+   
+    <div class="inet"id="4">
+        <div class="footer-content__copy">
+        <a class="footer-content-links__link" href="#">
+        <img class="inet_znak" src="img/free-icon-instagram-1077042.png"   width="100" height="90"></a>
+        <a class="footer-content-links__link" href="https://web.telegram.org/k/#@lee_moore">
+        <img class="inet_znak" src="img/free-icon-telegram-253802.png"   width="100" height="90"></a>
+        <a class="footer-content-links__link" href="#">
+        <img class="inet_znak" src="img/free-icon-whatsapp-1241020.png"   width="100" height="90"></a>
+    </div>
+    </div>
+   </div>
+
+   <a href="/#" class="scroll-top" style="display: none;"><i class="fa fa-chevron-up"></i></a>
+
+   <script async src="boton.js"></script>
+   <script async src="boton.js"></script>
+   
+  
+</body>
+</html>
